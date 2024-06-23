@@ -1,0 +1,19 @@
+
+.Utama {
+    display: flex;
+    flex-direction: row;
+    background: #FEFAF6;
+}
+.Main-Contain{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0px 50px;
+    margin-right: 400px;
+    margin-left: 50px;
+}
+/* @media (max-width: 768px)
+
+{
+    
+} */

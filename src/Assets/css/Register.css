@@ -1,0 +1,94 @@
+.register-container {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .left, .right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .left {
+    background-color: #102C57;
+  }
+  
+  .register-image {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .right {
+    padding: 20px;
+  }
+  
+  .register-form {
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .logo {
+    max-width: 150px;
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    margin-bottom: 10px;
+  }
+  
+  p {
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-control {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .btn-submit_B {
+    width: 100%;
+    padding: 10px;
+    background-color: #ffd700;
+    color: black;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 4px 4px 15px 0px rgba(0, 0, 0, 0.18) inset;
+  }
+  
+  .btnsubmit:hover {
+    background-color: #0d2444;
+    color: white;
+  }
+  
+  .login-link {
+    display: block;
+    margin-top: 15px;
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .login-link:hover {
+    text-decoration: underline;
+  }
+  .popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    text-align: center;
+  }

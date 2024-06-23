@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    font-family: "Poppins";
+}
+.sidebar{
+    background-color: #102C57;
+    width: 250px;
+    height: 100%;
+    flex-shrink: 0;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+.sidebar .main a {
+    text-decoration: none;
+    text-align: center;
+}
+.sidebar .header .list-item {
+    display: grid;
+    /* flex-direction: column; */
+    align-items: center;
+    padding: 12px 1px;
+    border-radius: 5px;
+    height: 70px;
+    width: 150px;
+    box-sizing: border-box;
+    
+}
+.sidebar .main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+}
+.sidebar .main .list-item {
+    display: flex;
+    /* grid-template-columns:  1fr; */
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    padding: 10px 10px;
+    padding-top: 10px;
+    border-radius: 8px; /*tepi border*/
+    height: 50px;
+    /* box-sizing: border-box; */
+    /* background: pink; */
+    margin-bottom: 16px;
+}
+
+
+.sidebar .main .list-item .icon {
+   
+    /* margin-right: 16px; */
+    /* size: 16px; */
+    width: 32px;
+    height: 32px;
+    /* flex-shrink: 0;  */
+    /* border: 1px solid red; */
+    /* bottom: 30px; */
+    /* left: 73px;
+    top: 200px; */
+    position: absolute;
+}
+
+.sidebar .main .list-item .description {
+    /* display: flex; */
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    color: #FEFAF6;
+    /* //// */
+    /* padding:  50px ; */
+    /* border-radius: 5px; */
+    line-height: 20px;
+    position: relative;
+    /* flex-grow: 2; */
+    /* text-align: left; */
+    /* border: 1px solid blue; */
+    margin-left: 41px;
+    margin-right: 20px;
+    bottom: 5px;
+    top: 5px;
+   
+}
+
+
+.sidebar .main .list-item:hover {
+    background: #F5DF79;
+    transition: background 0.2s ease-in-out;
+}
+.logout {
+    margin-top: auto;
+    margin-right: 50px;
+    text-align: center;
+    /* //// */
+    /* flex-grow: 1; */
+    /* display: flex; */
+    /* flex-direction: row; */
+    /* padding-top: 65px; */
+}
+.logout .list-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    padding: 10px 10px;
+    padding-top: 5px;
+    border-radius: 8px;
+    height: 60px;
+    box-sizing: border-box;
+    /* background: pink; */
+    margin-bottom: 16px;
+}
+.logout .list-item .description{
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+    color: #FEFAF6;
+    /* //// */
+    /* padding:  16px ; */
+    border-radius: 5px;
+    margin-right: 20px;
+    margin-left: 41px;
+    position: relative;
+    bottom: 5px;
+    top: 5px;
+   
+}
+.logout .list-item a {
+    text-decoration: none;
+}
+.logout .list-item .icon{
+    margin-right: 16px;
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
+    position: absolute;
+    
+}
+/* .keluar-btn-text {
+    text-align: center;
+    margin-right: 20px;
+} */

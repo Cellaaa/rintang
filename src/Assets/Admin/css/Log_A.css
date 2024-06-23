@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+:root {
+  font-size: 100%;
+  font-size: 16px;
+  line-height: 1.5;
+  --primary-blue: #233975;
+}
+
+.body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  background: #fcfcfc;
+}
+
+h1 {
+  font-size: 2.25rem;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1rem;
+}
+
+a {
+  font-weight: 700;
+  text-decoration: none;
+  color: var(--primary-blue);
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.small {
+  font-size: 80%;
+  text-align: center;
+}
+
+.split-screen {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.left {
+  height: 200px;
+  background: #102C57;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.l-picture {
+  width: 50%;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 20px;
+  width: 100%;
+}
+
+.opening {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.opening h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.opening h3 {
+  font-size: 1rem;
+}
+
+.Back {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
+form {
+  width: 100%;
+}
+
+form input[type="email"], form input[type="Username"], form input[type="password"] {
+  display: block;
+  width: 50%;
+  box-sizing: border-box;
+  border-radius: 10px;
+  border: 1px solid #373737;
+  padding: 1em;
+  margin-bottom: 1.25rem;
+  font-size: 0.875rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 0.75rem;
+}
+
+.input-container.cta {
+  display: flex;
+  flex-direction: row;
+}
+
+.input-container.password {
+  position: relative; 
+  width: 100%;
+}
+
+#show-hide {
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.checkbox-container {
+  display: block;
+  position: relative;
+  padding-left: 2rem;
+  cursor: pointer;
+  user-select: none;
+  margin: 0 0 1.25rem 0;
+}
+
+.checkbox-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkbox-container input:checked ~ .checkmark {
+  background-color: var(--primary-blue);
+  border: 1px solid var(--primary-blue);
+}
+
+.checkmark {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: white;
+  border: 1px solid #c4c4c4;
+  border-radius: 2px;
+  top: 2px;
+  left: 0;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.checkbox-container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.checkbox-container .checkmark:after {
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  width: 5px;
+  height: 10px;
+  left: 8px;
+  top: 4px;
+  transform: rotate(45deg);
+}
+
+.signup-btn {
+  display: block;
+  width: 70%;
+  background: #F5DF79;
+  color: rgb(4, 4, 4);
+  font-weight: 700;
+  border: 2px solid #000000;
+  padding: 1rem;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  text-align: center;
+}
+
+.signup-btn:hover {
+  background: #e7f304;
+  cursor: pointer;
+}
+
+
+#loader {
+  height: 1500px;
+  width: 1900px;
+  background-color: #102C57;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 100%;
+  animation: fadeIn ease-in 1;
+  animation-fill-mode: forwards;
+  animation-duration: 0.20s;
+  z-index: 999;
+  transition: all 0.75s;
+}
+
+#loader img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  opacity: 100%;
+  animation: fadeIn ease-in 1;
+  animation-fill-mode: forwards;
+  animation-duration: 2s;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 100%;
+  }
+  to {
+    opacity: 0%;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .split-screen {
+    flex-direction: row;
+    height: 100vh;
+  }
+
+  .left,
+  .right {
+    width: 50%;
+    height: auto;
+  }
+}
